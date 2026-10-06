@@ -1,0 +1,32 @@
+{
+  "name": "@zklogic/braces",
+  "homepage": "https://github.com/ArfanKhalilMughal/braces",
+  "author": {
+    "name": "Arfan Khalil Mughal",
+    "email": "arfankhalil@hotmail.com",
+    "url": "https://github.com/ArfanKhalilMughal"
+  },
+  "contributors": [
+    "Jon Schlinkert (https://github.com/jonschlinkert)",
+    "Brian Woodward (https://twitter.com/doowb)",
+    "Elan Shanker (https://github.com/es128)",
+    "Eugene Sharygin (https://github.com/eush77)",
+    "hemanth.hm (http://h3manth.com)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArfanKhalilMughal/braces.git"
+  },
+  "forkedFrom": {
+    "repository": "https://github.com/micromatch/braces",
+    "author": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "bugs": {
+    "email": "arfankhalil@hotmail.com",
+    "url": "https://github.com/ArfanKhalilMughal/braces/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
