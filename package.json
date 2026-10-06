@@ -1,19 +1,35 @@
 {
-  "name": "braces",
+  "name": "@zklogic/braces",
   "description": "Bash-like brace expansion, implemented in JavaScript. Safer than other brace expansion libs, with complete support for the Bash 4.3 braces specification, without sacrificing speed.",
-  "version": "3.0.3",
-  "homepage": "https://github.com/micromatch/braces",
-  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "version": "3.0.4",
+  "homepage": "https://github.com/ArfanKhalilMughal/braces",
+  "author": {
+    "name": "Arfan Khalil Mughal",
+    "email": "arfankhalil@hotmail.com",
+    "url": "https://github.com/ArfanKhalilMughal"
+  },
   "contributors": [
+    "Jon Schlinkert (https://github.com/jonschlinkert)",
     "Brian Woodward (https://twitter.com/doowb)",
     "Elan Shanker (https://github.com/es128)",
     "Eugene Sharygin (https://github.com/eush77)",
-    "hemanth.hm (http://h3manth.com)",
-    "Jon Schlinkert (http://twitter.com/jonschlinkert)"
+    "hemanth.hm (http://h3manth.com)"
   ],
-  "repository": "micromatch/braces",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArfanKhalilMughal/braces.git"
+  },
+  "forkedFrom": {
+    "repository": "https://github.com/micromatch/braces",
+    "author": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
   "bugs": {
-    "url": "https://github.com/micromatch/braces/issues"
+    "email": "arfankhalil@hotmail.com",
+    "url": "https://github.com/ArfanKhalilMughal/braces/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT",
   "files": [
