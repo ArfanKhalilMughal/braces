@@ -1,4 +1,4 @@
-# @zklogic/braces [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8YFZ425KND68) [![NPM version](https://img.shields.io/npm/v/@zklogic/braces.svg?style=flat)](https://www.npmjs.com/package/@zklogic/braces) [![NPM monthly downloads](https://img.shields.io/npm/dm/@zklogic/braces.svg?style=flat)](https://npmjs.org/package/@zklogic/braces) [![NPM total downloads](https://img.shields.io/npm/dt/@zklogic/braces.svg?style=flat)](https://npmjs.org/package/@zklogic/braces) 
+# @zklogic/braces [![NPM version](https://img.shields.io/npm/v/@zklogic/braces.svg?style=flat)](https://www.npmjs.com/package/@zklogic/braces) [![NPM monthly downloads](https://img.shields.io/npm/dm/@zklogic/braces.svg?style=flat)](https://npmjs.org/package/@zklogic/braces) [![NPM total downloads](https://img.shields.io/npm/dt/@zklogic/braces.svg?style=flat)](https://npmjs.org/package/@zklogic/braces) 
 
 > Bash-like brace expansion, implemented in JavaScript. Safer than other brace expansion libs, with complete support for the Bash 4.3 braces specification, without sacrificing speed.
 
