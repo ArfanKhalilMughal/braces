@@ -1,4 +1,4 @@
-# braces [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8YFZ425KND68) [![NPM version](https://img.shields.io/npm/v/braces.svg?style=flat)](https://www.npmjs.com/package/braces) [![NPM monthly downloads](https://img.shields.io/npm/dm/braces.svg?style=flat)](https://npmjs.org/package/braces) [![NPM total downloads](https://img.shields.io/npm/dt/braces.svg?style=flat)](https://npmjs.org/package/braces) 
+# @zklogic/braces [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8YFZ425KND68) [![NPM version](https://img.shields.io/npm/v/@zklogic/braces.svg?style=flat)](https://www.npmjs.com/package/@zklogic/braces) [![NPM monthly downloads](https://img.shields.io/npm/dm/@zklogic/braces.svg?style=flat)](https://npmjs.org/package/@zklogic/braces) [![NPM total downloads](https://img.shields.io/npm/dt/@zklogic/braces.svg?style=flat)](https://npmjs.org/package/@zklogic/braces) 
 
 > Bash-like brace expansion, implemented in JavaScript. Safer than other brace expansion libs, with complete support for the Bash 4.3 braces specification, without sacrificing speed.
 
@@ -9,8 +9,24 @@ Please consider following this project's author, [Jon Schlinkert](https://github
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save braces
+$ npm install --save @zklogic/braces
 ```
+
+## About this fork
+
+`@zklogic/braces` is a fork of [micromatch/braces](https://github.com/micromatch/braces), maintained by [Arfan Khalil Mughal](https://github.com/ArfanKhalilMughal). It is a drop-in, API-compatible replacement for `braces` 3.x with one addition: a nesting-depth guard that fixes stack exhaustion on deeply nested patterns ([CVE-2026-93687](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm)), based on upstream [PR #79](https://github.com/micromatch/braces/pull/79). Nesting deeper than `maxDepth` (default `256`) is kept as literal text instead of overflowing the stack. See [options.maxDepth](#optionsmaxdepth).
+
+To use it everywhere in a dependency tree (for example for `micromatch`, `chokidar` or `karma`), alias it in your `package.json`:
+
+```json
+{
+  "overrides": {
+    "braces": "npm:@zklogic/braces@^3.0.5"
+  }
+}
+```
+
+The `require('braces')` calls in your dependencies keep working, because the alias installs this package under the name `braces`. Upstream changes are merged in periodically, and the original author and contributors are credited in `package.json`.
 
 ## v3.0.0 Released!!
 
@@ -35,7 +51,7 @@ Brace patterns make globs more powerful by adding the ability to match specific 
 The main export is a function that takes one or more brace `patterns` and `options`.
 
 ```js
-const braces = require('braces');
+const braces = require('@zklogic/braces');
 // braces(patterns[, options]);
 
 console.log(braces(['{01..05}', '{a..e}']));
@@ -291,7 +307,7 @@ The `quantifiers` option tells braces to detect when [regex quantifiers](https:/
 **Examples**
 
 ```js
-const braces = require('braces');
+const braces = require('@zklogic/braces');
 console.log(braces('a/b{1,3}/{x,y,z}'));
 //=> [ 'a/b(1|3)/(x|y|z)' ]
 console.log(braces('a/b{1,3}/{x,y,z}', { quantifiers: true }));
